@@ -1,0 +1,39 @@
+body {
+    margin-bottom: 2rem;
+    background-color: #fafafa;
+}
+
+.search-card {
+    border: 2px solid #e3e3e3;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.card-img {
+    height: 15rem;
+    width: 11rem;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.card-body {
+    padding: 0.5rem 1rem;
+}
+
+.card-title {
+    font-size: 1.6rem;
+}
+
+.movie-date {
+    color: grey;
+    margin-top: -0.6rem;
+    font-size: 0.8rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}

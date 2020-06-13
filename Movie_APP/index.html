@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie APP (Using API)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./design/styles.css">
+</head>
+<body>
+    <nav class="bg-info text-center py-2 text-white">
+        Movie APP (Using themoviedb API)
+    </nav>
+
+    <div class="container">
+        <div class="row mt-4 justify-content-center">
+            <div class="col-8 search-card">
+                <h1>Search Movie</h1>
+
+                <div class="form-group mt-3">
+                    <label for="movieField">Enter movie name that you want to search</label>
+                    <input type="text" class="form-control" id="movieField" value="">
+
+                    <button class="btn btn-primary btn-block mt-3" id="searchMovie">Search Movie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <p id="results"></p>
+
+            <div id="movie-list">
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/movie.js"></script>
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>

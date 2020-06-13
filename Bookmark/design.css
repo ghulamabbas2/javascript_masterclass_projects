@@ -1,0 +1,37 @@
+body {
+    background-color: #FBDB89;
+}
+
+#bookmark_btn {
+    background-color: #F48982;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.4rem 0rem;
+}
+
+form {
+    background-color: white;
+    padding: 2.2rem 2rem;
+    border-radius: 1.2rem;
+}
+
+.bookmark-card {
+    font-size: 1.4rem;
+    background-color: white;
+    font-weight: bold;
+    padding : 1rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#bookmark_id {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#date {
+    font-size: 1rem;
+    font-weight: normal;
+    color : grey;
+    margin-top: -5px;
+}

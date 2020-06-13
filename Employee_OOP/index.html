@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee APP - OOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./design/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h1 class="my-4 w-50">Add Employees</h1>
+
+                <form id="employee_form" class="w-50">
+                    <div class="form-group">
+                        <label for="nameField">Employee name</label>
+                        <input type="text" class="form-control" id="nameField" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salaryField">Employee Salary</label>
+                        <input type="text" class="form-control" id="salaryField" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taxField">Salary Tax (%)</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">%</div>
+                            </div>
+                            <input type="number" class="form-control" id="taxField" value="" step="0.01">
+                        </div> 
+                    </div>
+
+                    <button id="add_employee" class="btn btn-primary btn-block my-4">Add Employee</button>
+
+                </form>
+
+                <table class="table mt-5">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Pre-Tax Amount</th>
+                            <th scope="col">Tax (%)</th>
+                            <th scope="col">Net Salary</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

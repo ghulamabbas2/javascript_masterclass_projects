@@ -1,0 +1,210 @@
+.navbar-light .navbar-brand {
+    font-size: 2rem;
+    color: grey;
+}
+
+.nav-btn {
+    text-transform : none !important;
+    font-weight : 600 !important;
+    background-color: #3498DB;
+    color: white !important;
+    border: 1px solid #3498DB;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 1.3rem !important;
+    padding-right: 1.3rem !important;
+}
+
+#search-container {
+    background: linear-gradient(90deg, #3398DA, #1CB9A2) !important;
+    padding: 2rem 5rem;
+}
+
+#search-form {
+    display: inline;
+}
+
+.search-field, .location-field {
+    height: 42px;
+    border-radius: 0!important;
+    min-width: 100%;
+    background: rgba(255,255,255,0);
+    border: 1.2px solid white;
+    color: white;
+    padding-left: 0.5rem;
+}
+
+::placeholder {
+    color: white;
+}
+
+#search-btn {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 2px rgb(255, 255, 255);
+    border-color: white;
+    background-color: white;
+    color: #1cbaa0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.job-card {
+    padding: 0.9rem 0.8rem;
+    border-radius: 0.5rem;
+    border: 1.2px solid grey;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08) !important;
+}
+
+.job-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.job-card h3 a{
+    color: black;
+}
+
+.job-card #company {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 0.6rem;
+}
+.job-card p {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+#jobs-found {
+    color: grey; 
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-card:hover {
+    border-radius: 0.5rem;
+    border: 1.2px solid #3498DB;
+    cursor: pointer;
+    transition: 0.3s ease-out border-color;
+}
+
+.single-job h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.single-job h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.single-job p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.single-job .row p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.apply-btn {
+    background-color: #4688f1;
+    color: white;
+    border-radius: 50px !important;
+    border: 2px solid transparent;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.save-btn {
+    background-color: white;
+    color: #4688f1;
+    border-radius: 50px !important;
+    border: 2px solid #4688f1;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#close {
+    font-size: 1.4rem;
+    color: grey;
+    cursor: pointer;
+}
+
+#content-container {
+    height: 500px;
+    overflow-x: auto;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.filter-heading {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.single-job {
+    border-radius: 12px;
+    border: 1px solid grey;
+    transition: opacity 150ms ease-in-out;
+    height: 85%;
+    padding: 0.7rem;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    opacity: 1;
+}
+
+footer a {
+    display: inline;
+    margin-left: 1.2rem;
+    color: #495057 !important;
+    font-weight: bold;
+}
+
+footer p {
+    color: #6c757d!important
+}
+
+.btn-pagination {
+    color: #F9F5F3;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #4688f1;
+    padding: .8rem 1.2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s; 
+}
+
+.btn-pagination span {
+    margin: 0 .4rem; 
+}
+
+.btn-pagination:hover {
+    color: #4688f1;
+    background-color: #F2EFEE; 
+}
+
+.btn_prev {
+    float: left;
+    /* flex-direction: row-reverse;  */
+}
+.btn_next{
+    float: right; 
+}

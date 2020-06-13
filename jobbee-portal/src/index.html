@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobbee - Find Your Jobs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#"><b>JOBS PORTAL</b> </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-btn" href="#">Saved Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn" href="#">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Container -->
+
+    <div id="search-container">
+        <form id="search">
+            <div class="form-row justify-content-between">
+                <div class="col-5">
+                    <input type="text" class="search-field" placeholder="Job Keyword, Skill..." name="q">
+                </div>
+
+                <div class="col-5">
+                    <input type="text" class="location-field" placeholder="Location" name="location">
+                </div>
+
+                <div class="col-2">
+                    <input type="submit" class="btn btn-lg btn-secondary" id="search-btn" value="Search" name="" id="">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Main Jobs Area -->
+    <div class="mt-5">
+        <div class="row justify-content-around">
+            <div class="col-2 ml-4 mt-4">
+                <h3>Filters</h3>
+
+                <hr>
+
+                <h4 class="filter-heading">Salary</h4>
+                <label for="minSalary">Min</label>
+                <input class="form-control mb-3" type="number" id="minSalary" value="0">
+
+                <label for="maxSalary">Max</label>
+                <input class="form-control mb-4" type="number" id="maxSalary" value="0">
+
+                <hr>
+
+                <h4 class="filter-heading">Experience</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experienceCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'experienceCheck')" value="No Experience">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;No Experience
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experienceCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'experienceCheck')" value="1 Year - 2 Years">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;1 Year - 2 Years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experienceCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'experienceCheck')" value="2 Years - 5 Years">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;2 Years - 5 Years
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experienceCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'experienceCheck')" value="5 Years" >
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;5 Years+
+                    </label>
+                </div>
+
+                <hr>
+                <h4 class="filter-heading">Job Type</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="typeCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'typeCheck')" value="Permanent">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;Permanent
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="typeCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'typeCheck')" value="Temporary">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;Temporary
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="typeCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'typeCheck')" value="Internship">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;Internship
+                    </label>
+                </div>
+
+                <hr>
+
+                <h4 class="filter-heading">Education</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="eduCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'eduCheck')" value="Bachelors">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;Bachelors
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultCheck1" name="eduCheck"
+                        onclick="onlyOne(this, 'eduCheck')" value="Masters">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;Masters
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="eduCheck" id="defaultCheck1"
+                        onclick="onlyOne(this, 'eduCheck')" value="Phd">
+                    <label class="form-check-label" for="defaultCheck1">
+                        &nbsp;&nbsp;Phd
+                    </label>
+                </div>
+
+                <button id="apply-filters" class="apply-btn my-5" >Apply Filters</button>
+
+            </div>
+
+            <div class="col-4">
+                <div class="jobs-list">
+
+                </div>
+
+                <div class="results__pages">
+                    
+                </div>
+            </div>
+
+            <div id="singleJob" class="col-4 mt-4">
+                
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer class="text-center my-4">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Github</a>
+        <p class="mt-2">Designed and built with all the love to learn all about <b>JavaScipt.</b></p>
+    </footer>
+
+    <script>
+        function onlyOne(checkbox, checkName) {
+            const checkboxes = document.getElementsByName(checkName);
+
+            checkboxes.forEach((item) => {
+                if (item !== checkbox) item.checked = false
+            })
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/c8d42b430d.js"></script>
+
+</html>

@@ -1,0 +1,7 @@
+form, h1, .alert {
+    margin-left: 25%;
+}
+
+.alert {
+    width: 50%;
+}
